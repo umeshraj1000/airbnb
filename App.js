@@ -10,6 +10,8 @@ export default function App() {
     <View>
       <StatusBar translucent={false} backgroundColor="white" />
       <Post />
+      <Post />
+      <Post />
     </View>
   );
 }
