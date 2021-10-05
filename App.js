@@ -5,6 +5,7 @@ import Post from "./src/components/Post";
 import feed from "./assets/data/feed";
 import SearchResultsScreen from "./src/screens/SearchResultsScreen";
 import HomeScreen from "./src/screens/HomeScreen";
+import DestinationSearchScreen from "./src/screens/DestinationSearchScreen";
 
 const post1 = feed[0];
 const post2 = feed[1];
@@ -15,8 +16,9 @@ export default function App() {
     <View>
       <StatusBar translucent={false} backgroundColor="white" />
       {/* <Post post={post1} /> */}
-      <SearchResultsScreen />
+      {/* <SearchResultsScreen /> */}
       {/* <HomeScreen /> */}
+      <DestinationSearchScreen />
     </View>
   );
 }
