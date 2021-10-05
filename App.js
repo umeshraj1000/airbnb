@@ -6,6 +6,7 @@ import feed from "./assets/data/feed";
 import SearchResultsScreen from "./src/screens/SearchResultsScreen";
 import HomeScreen from "./src/screens/HomeScreen";
 import DestinationSearchScreen from "./src/screens/DestinationSearchScreen";
+import GuestsScreen from "./src/screens/GuestsScreen";
 
 const post1 = feed[0];
 const post2 = feed[1];
@@ -18,7 +19,8 @@ export default function App() {
       {/* <Post post={post1} /> */}
       {/* <SearchResultsScreen /> */}
       {/* <HomeScreen /> */}
-      <DestinationSearchScreen />
+      {/* <DestinationSearchScreen /> */}
+      <GuestsScreen />
     </View>
   );
 }
