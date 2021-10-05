@@ -2,24 +2,24 @@ import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
 function Post(props) {
+  const post = props.post;
+  // console.log(post);
+
   return (
     <View style={styles.container}>
-      <Image
-        source={{
-          uri: "https://a0.muscache.com/im/pictures/miso/Hosting-26117817/original/9da40e3c-5846-4359-bb41-05c27b09a8f5.jpeg?im_w=720",
-        }}
-        style={styles.image}
-      />
-      <Text style={styles.bedrooms}>1 Bed 1 Bedroom</Text>
+      <Image source={{ uri: post.image }} style={styles.image} />
+      <Text style={styles.bedrooms}>
+        {post.bed} bed {post.bedroom} bedrooms
+      </Text>
       <Text style={styles.description} numberOfLines={2}>
-        Whispering Pines Cottages|treehouse|Tandi
+        {post.title}
       </Text>
       <Text style={styles.prices}>
-        <Text style={styles.oldPrice}>₹2000</Text>
-        <Text style={styles.price}> ₹999 </Text>
+        <Text style={styles.oldPrice}>₹{post.oldPrice}</Text>
+        <Text style={styles.price}> ₹{post.newPrice} </Text>
         /night
       </Text>
-      <Text style={styles.totalPrice}>₹2500 total</Text>
+      <Text style={styles.totalPrice}>₹{post.totalPrice} total</Text>
     </View>
   );
 }

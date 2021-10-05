@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import Fontisto from "react-native-vector-icons/Fontisto";
 
-function Home(props) {
+function HomeScreen(props) {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -77,4 +77,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default HomeScreen;
